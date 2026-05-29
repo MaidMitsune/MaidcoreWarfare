@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b22i21e7aie41"]
+
+[ext_resource type="Script" uid="uid://c4eie4a3e2b8b" path="res://Bullet.gd" id="1_v7oki"]
+
+[node name="Bullet" type="Node3D" unique_id=1861038083]
+script = ExtResource("1_v7oki")
