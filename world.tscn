@@ -40,14 +40,14 @@ albedo_color = Color(1, 0, 0, 1)
 
 [node name="Interface" parent="." unique_id=2079976860 instance=ExtResource("1_tlwt5")]
 anchors_preset = -1
-anchor_left = 0.49300003
+anchor_left = 0.52425003
 anchor_top = 0.76417285
-anchor_right = 0.49300003
+anchor_right = 0.52598614
 anchor_bottom = 0.76417285
-offset_left = -102.936035
-offset_top = 5.815979
-offset_right = 137.06396
-offset_bottom = 627.816
+offset_left = -252.93604
+offset_top = -502.18402
+offset_right = 23.063965
+offset_bottom = 123.81598
 grow_horizontal = 1
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1056315638]

@@ -65,3 +65,10 @@ offset_right = 8.125992
 offset_bottom = 20.047997
 theme_override_font_sizes/font_size = 40
 text = "50"
+
+[node name="Label" type="Label" parent="." unique_id=1619805331]
+layout_mode = 0
+offset_top = -36.0
+offset_right = 182.0
+offset_bottom = -13.0
+text = "Reloading..."
