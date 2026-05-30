@@ -31,6 +31,11 @@ subsurf_scatter_enabled = true
 subsurf_scatter_strength = 1.0
 subsurf_scatter_texture = SubResource("ImageTexture_tlwt5")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tlwt5"]
+transparency = 1
+vertex_color_is_srgb = true
+albedo_color = Color(1, 0, 0, 1)
+
 [node name="World" type="Node3D" unique_id=1956992291]
 
 [node name="Interface" parent="." unique_id=2079976860 instance=ExtResource("1_tlwt5")]
@@ -96,6 +101,16 @@ use_collision = true
 size = Vector3(2.4191895, 0.5636139, 2.5913086)
 material = SubResource("StandardMaterial3D_aqk2v")
 
+[node name="CSGBox3D9" type="CSGBox3D" parent="." unique_id=8951773]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.774253, 2.064149, -11.876187)
+transparency = 0.4
+use_collision = true
+collision_layer = 0
+collision_mask = 0
+collision_priority = 0.0
+size = Vector3(4.001, 3, 4.597)
+material = SubResource("StandardMaterial3D_tlwt5")
+
 [node name="Player" parent="." unique_id=394906023 instance=ExtResource("1_fj7yv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6341238, 0)
 
@@ -105,3 +120,11 @@ light_color = Color(0.9999991, 0.9905699, 0.49212247, 1)
 light_energy = 1.5
 shadow_enabled = true
 directional_shadow_mode = 1
+
+[node name="Label3D" type="Label3D" parent="." unique_id=1599468539]
+transform = Transform3D(0.054078843, 0, -0.99853665, 0, 1, 0, 0.99853665, 0, 0.054078843, 11.069122, 2.232414, -6.983796)
+text = "DAMAGE CUBE"
+font_size = 60
+outline_size = 13
+
+[editable path="Player"]
