@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://qyynjhrvyayy"]
+
+[ext_resource type="Texture2D" uid="uid://cb74c735xf7fq" path="res://Pics/blank.png" id="1_usygm"]
+[ext_resource type="Texture2D" uid="uid://bebbsi1xinw6d" path="res://Pics/Health.png" id="2_5p0e8"]
+
+[sub_resource type="Theme" id="Theme_5p0e8"]
+
+[node name="HP_counter" type="NinePatchRect" unique_id=987930985]
+custom_minimum_size = Vector2(340, 120)
+anchors_preset = -1
+anchor_left = 0.029000001
+anchor_top = 0.75900006
+anchor_right = 0.029000001
+anchor_bottom = 0.75900006
+offset_left = -24.408
+offset_top = 2.1679688
+offset_right = 321.592
+offset_bottom = 132.16797
+texture = ExtResource("1_usygm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2077023176]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -26.0
+offset_right = 182.0
+offset_bottom = 151.0
+texture = ExtResource("2_5p0e8")
+
+[node name="Label" type="Label" parent="." unique_id=2014921893]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 18.0
+offset_right = 319.0
+offset_bottom = 107.0
+theme = SubResource("Theme_5p0e8")
+theme_type_variation = &"HeaderLarge"
+theme_override_font_sizes/font_size = 50
+text = "100"
+horizontal_alignment = 1
+vertical_alignment = 1

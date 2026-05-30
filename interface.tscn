@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://k05a5y8t47oy"]
+
+[ext_resource type="PackedScene" uid="uid://c5btq0phlcxuf" path="res://ammo_counter.tscn" id="1_kyn48"]
+[ext_resource type="PackedScene" uid="uid://qyynjhrvyayy" path="res://hp_counter.tscn" id="2_oi7g3"]
+
+[node name="Interface" type="Control" unique_id=2079976860]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=640671975]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -528.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HP_counter" parent="HBoxContainer" unique_id=987930985 instance=ExtResource("2_oi7g3")]
+layout_mode = 2
+
+[node name="Ammo_counter" parent="HBoxContainer" unique_id=695974483 instance=ExtResource("1_kyn48")]
+layout_mode = 2

@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://c5btq0phlcxuf"]
+
+[ext_resource type="Texture2D" uid="uid://cb74c735xf7fq" path="res://Pics/blank.png" id="1_jjmtm"]
+[ext_resource type="Texture2D" uid="uid://bgqjsbxmkm80n" path="res://Pics/ammo.png" id="2_0phiv"]
+[ext_resource type="Texture2D" uid="uid://bf63y3y4nr14x" path="res://Pics/thing.png" id="3_d1nl3"]
+
+[sub_resource type="Theme" id="Theme_u5tv1"]
+
+[node name="Ammo_counter" type="NinePatchRect" unique_id=695974483]
+custom_minimum_size = Vector2(280, 100)
+anchors_preset = -1
+anchor_left = 0.97400004
+anchor_top = 0.813
+anchor_right = 0.97400004
+anchor_bottom = 0.813
+offset_left = -286.0481
+offset_top = -12.824036
+offset_right = -0.048095703
+offset_bottom = 91.175964
+texture = ExtResource("1_jjmtm")
+
+[node name="Bullet Icon" type="TextureRect" parent="." unique_id=752100074]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.929
+anchor_top = 0.17600001
+anchor_right = 0.929
+anchor_bottom = 0.17600001
+offset_left = -76.78905
+offset_top = -68.352
+offset_right = -3.7890625
+offset_bottom = 110.647995
+texture = ExtResource("2_0phiv")
+
+[node name="Mag" type="Label" parent="." unique_id=911925102]
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.11100001
+offset_left = 11.0
+offset_top = 18.0
+offset_right = 57.0
+offset_bottom = 61.456
+theme = SubResource("Theme_u5tv1")
+theme_override_font_sizes/font_size = 40
+text = "10"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=174327471]
+layout_mode = 0
+offset_left = 50.0
+offset_top = -4.0
+offset_right = 121.0
+offset_bottom = 102.0
+texture = ExtResource("3_d1nl3")
+
+[node name="Reserve" type="Label" parent="." unique_id=1800779066]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.559
+anchor_top = 0.66300005
+anchor_right = 0.559
+anchor_bottom = 0.66300005
+offset_left = -37.87401
+offset_top = -34.952003
+offset_right = 8.125992
+offset_bottom = 20.047997
+theme_override_font_sizes/font_size = 40
+text = "50"
