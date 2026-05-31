@@ -101,13 +101,22 @@ signal health_changed(new_hp: float)
 var health: float     = 100.0
 var max_health: float = 100.0
 
+# @export var health: health_system
+# var is_dead = false
+
+# ── Camera ───────
 var cam_base_y:  float = 0.0
 var head_base_x: float = 0.0
 
 func _ready() -> void:
+	# For mouse
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	cam_base_y  = camera.transform.origin.y
 	head_base_x = head.position.x
+	
+	# For HP
+	# if health:
+		# health.died.connect(_on_player_death)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventMouseMotion:
@@ -129,8 +138,29 @@ func _unhandled_input(event: InputEvent) -> void:
 
 	if event.is_action_pressed("cock"):
 		pistol.try_cock()
+		
+
+# Damage and Death
+#______________________________________________
+# func take_damage(amount: int) -> void:
+	# if health and not is_dead:
+		# health._take_damage(amount)
+		
+# func _on_player_death() -> void:
+	# print("Player has died!")
+	# is_dead = true
+	
+	# Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
+	# var death_tween = create_tween()
+	# death_tween.tween_property(head, "rotation:x", deg_to_rad(-90), 1.0)
+#______________________________________________
 
 func _physics_process(delta: float) -> void:
+	# --Check if player is dead--
+	# if is_dead:
+		# return
+	
 	# ── Reset per-frame flags ──
 	_jumped_this_frame = false
 

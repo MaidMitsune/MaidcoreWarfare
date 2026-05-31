@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bo7xqaius4hw8" path="res://Player.gd" id="1_kpjcp"]
 [ext_resource type="Script" uid="uid://3hoftip0ptdl" path="res://Pistol.gd" id="2_kpjcp"]
+[ext_resource type="Script" uid="uid://cnhls1afgialx" path="res://Reusable scripts/health-system.gd" id="3_kne1u"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_f3sb7"]
 
@@ -27,3 +28,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.121196, 0)
 script = ExtResource("2_kpjcp")
 
 [node name="SpawnPoint" type="Marker3D" parent="head/Pistol" unique_id=1726956682]
+
+[node name="Health" type="Node" parent="." unique_id=1548785195]
+script = ExtResource("3_kne1u")
