@@ -7,7 +7,7 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_f3sb7"]
 
-[node name="CharacterBody3D2" type="CharacterBody3D" unique_id=394906023]
+[node name="CharacterBody3D2" type="CharacterBody3D" unique_id=394906023 groups=["player"]]
 script = ExtResource("1_kpjcp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=487604962]
@@ -23,7 +23,7 @@ shape = SubResource("CapsuleShape3D_f3sb7")
 [node name="Camera3D" type="Camera3D" parent="head" unique_id=239794350]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.121196, 0)
 
-[node name="Pistol" type="Node3D" parent="head" unique_id=681185608]
+[node name="Pistol" type="Node3D" parent="head" unique_id=681185608 groups=["weapon"]]
 script = ExtResource("2_kpjcp")
 
 [node name="SpawnPoint" type="Marker3D" parent="head/Pistol" unique_id=1726956682]

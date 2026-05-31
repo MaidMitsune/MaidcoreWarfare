@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://qyynjhrvyayy"]
 
 [ext_resource type="Texture2D" uid="uid://cb74c735xf7fq" path="res://Pics/blank.png" id="1_usygm"]
+[ext_resource type="Script" uid="uid://c8ejbv26cn401" path="res://HP_counter.gd" id="2_2wwyp"]
 [ext_resource type="Texture2D" uid="uid://bebbsi1xinw6d" path="res://Pics/Health.png" id="2_5p0e8"]
 
 [sub_resource type="Theme" id="Theme_5p0e8"]
@@ -17,6 +18,7 @@ offset_top = 2.1679688
 offset_right = 321.592
 offset_bottom = 132.16797
 texture = ExtResource("1_usygm")
+script = ExtResource("2_2wwyp")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2077023176]
 layout_mode = 0

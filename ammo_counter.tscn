@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cb74c735xf7fq" path="res://Pics/blank.png" id="1_jjmtm"]
 [ext_resource type="Texture2D" uid="uid://bgqjsbxmkm80n" path="res://Pics/ammo.png" id="2_0phiv"]
+[ext_resource type="Script" uid="uid://owhb4a0up52m" path="res://Ammo_counter.gd" id="2_d1nl3"]
 [ext_resource type="Texture2D" uid="uid://bf63y3y4nr14x" path="res://Pics/thing.png" id="3_d1nl3"]
 
 [sub_resource type="Theme" id="Theme_u5tv1"]
@@ -18,6 +19,7 @@ offset_top = -12.824036
 offset_right = -0.048095703
 offset_bottom = 91.175964
 texture = ExtResource("1_jjmtm")
+script = ExtResource("2_d1nl3")
 
 [node name="Bullet Icon" type="TextureRect" parent="." unique_id=752100074]
 layout_mode = 1
