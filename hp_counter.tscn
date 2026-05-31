@@ -28,7 +28,7 @@ offset_right = 182.0
 offset_bottom = 151.0
 texture = ExtResource("2_5p0e8")
 
-[node name="Label" type="Label" parent="." unique_id=2014921893]
+[node name="HP" type="Label" parent="." unique_id=2014921893]
 layout_mode = 0
 offset_left = 205.0
 offset_top = 18.0
