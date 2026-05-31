@@ -141,6 +141,10 @@ func _physics_process(delta: float) -> void:
 			_landing_timer = LANDING_GRACE   # preserve speed briefly on landing
 	_was_on_floor    = is_on_floor()
 	_landing_timer   = max(_landing_timer - delta, 0.0)
+	
+	# Press the delete (del) key to exit the program quickly
+	if Input.is_action_just_pressed("Exit Program"):
+		get_tree().quit()
 
 	# ── Main update order ──
 	_handle_gravity(delta)
