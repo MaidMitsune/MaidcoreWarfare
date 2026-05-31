@@ -11,6 +11,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_oi7g3")
 metadata/_edit_use_anchors_ = true
 
@@ -25,10 +26,10 @@ offset_right = -512.0
 offset_bottom = -37.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="HP_counter" parent="HBoxContainer" unique_id=987930985 instance=ExtResource("2_oi7g3")]
 layout_mode = 2
-metadata/_edit_lock_ = true
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=263771246]
 layout_mode = 1
@@ -41,7 +42,7 @@ offset_left = 329.29596
 offset_top = -38.968018
 offset_right = 609.29596
 offset_bottom = 61.031982
+mouse_filter = 2
 
 [node name="Ammo_counter" parent="HBoxContainer2" unique_id=695974483 instance=ExtResource("1_kyn48")]
 layout_mode = 2
-metadata/_edit_lock_ = true

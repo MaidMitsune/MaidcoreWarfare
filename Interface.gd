@@ -3,7 +3,7 @@ extends Control
 # References to the two sub-scenes.
 # Paths must match the node names in interface.tscn exactly.
 @onready var hp_counter    = $HBoxContainer/HP_counter
-@onready var ammo_counter  = $HBoxContainer/Ammo_counter
+@onready var ammo_counter  = $HBoxContainer2/Ammo_counter
  
 func _ready() -> void:
 	var pistol = get_tree().get_first_node_in_group("weapon")
