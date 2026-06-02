@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cj16g42oa1xki" path="res://Player.tscn" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://k05a5y8t47oy" path="res://interface.tscn" id="1_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://dodwor8fh1yqk" path="res://ai_zone.tscn" id="3_tlwt5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fj7yv"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -35,6 +36,8 @@ subsurf_scatter_texture = SubResource("ImageTexture_tlwt5")
 transparency = 1
 vertex_color_is_srgb = true
 albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_tlwt5"]
 
 [node name="World" type="Node3D" unique_id=1956992291]
 
@@ -126,5 +129,12 @@ transform = Transform3D(0.054078843, 0, -0.99853665, 0, 1, 0, 0.99853665, 0, 0.0
 text = "DAMAGE CUBE"
 font_size = 60
 outline_size = 13
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="." unique_id=2074465659]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63.90589, 0, 0)
+navigation_mesh = SubResource("NavigationMesh_tlwt5")
+
+[node name="AI-Zone" parent="NavigationRegion3D" unique_id=691516838 instance=ExtResource("3_tlwt5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.32385254, 0)
 
 [editable path="Player"]
