@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cj16g42oa1xki" path="res://Player.tscn" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://k05a5y8t47oy" path="res://interface.tscn" id="1_tlwt5"]
+[ext_resource type="PackedScene" uid="uid://clnwih03ctbvy" path="res://enemy.tscn" id="3_aqk2v"]
 [ext_resource type="PackedScene" uid="uid://dodwor8fh1yqk" path="res://ai_zone.tscn" id="3_tlwt5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_fj7yv"]
@@ -117,8 +118,10 @@ material = SubResource("StandardMaterial3D_tlwt5")
 [node name="Player" parent="." unique_id=394906023 instance=ExtResource("1_fj7yv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6341238, 0)
 
+[node name="Enemy" parent="." unique_id=2013053151 instance=ExtResource("3_aqk2v")]
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1271722917]
-transform = Transform3D(0.7773766, 0.618899, -0.1124701, -0.23371187, 0.4501721, 0.8618144, 0.5840069, -0.64366895, 0.49459738, 27.730732, 16.861498, 39.66408)
+transform = Transform3D(0.7773767, 0.6188989, -0.112470515, -0.23371191, 0.45017195, 0.8618144, 0.584007, -0.6436687, 0.49459726, 24.01792, 18.213322, 43.348896)
 light_color = Color(0.9999991, 0.9905699, 0.49212247, 1)
 light_energy = 1.5
 shadow_enabled = true

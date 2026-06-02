@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://clnwih03ctbvy"]
+
+[ext_resource type="Script" uid="uid://dwnruc6ihgurp" path="res://enemy_ai.gd" id="1_7k104"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4gyqm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qi2p4"]
+albedo_color = Color(1, 0, 0.05882353, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_iifgy"]
+material = SubResource("StandardMaterial3D_qi2p4")
+
+[sub_resource type="SphereMesh" id="SphereMesh_epg4t"]
+
+[node name="Enemy" type="CharacterBody3D" unique_id=2013053151]
+script = ExtResource("1_7k104")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=97583773]
+transform = Transform3D(1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0.6385074, 0)
+shape = SubResource("CapsuleShape3D_4gyqm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=18103782]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6594106, 0)
+mesh = SubResource("CapsuleMesh_iifgy")
+
+[node name="Head" type="Node3D" parent="." unique_id=66559621]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1428666, 0)
+
+[node name="Eye" type="MeshInstance3D" parent="Head" unique_id=1141412386]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.45625913, 0.020247936, 0.17561603)
+mesh = SubResource("SphereMesh_epg4t")
+
+[node name="Eye2" type="MeshInstance3D" parent="Head" unique_id=870171430]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0.45226443, 0.01630032, -0.17886385)
+mesh = SubResource("SphereMesh_epg4t")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=536986285]
+
+[node name="AttackTimer" type="Timer" parent="." unique_id=2018806715]
+
+[node name="AlertCooldown" type="Timer" parent="." unique_id=1023136221]
+
+[node name="WanderTimer" type="Timer" parent="." unique_id=1344660319]
+
+[node name="StrafeTimer" type="Timer" parent="." unique_id=1948941782]
